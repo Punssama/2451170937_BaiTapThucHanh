@@ -3,8 +3,358 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <title>My Portfolio</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <a href="#hero" class="logo">DangHuyPhong</a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon" aria-label="Toggle navigation">
+        ☰
+      </label>
+      <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <h1>Hi, I'm <span>Dang Huy Phong</span></h1>
+        <p>Full-Stack Developer | UI Designer | Problem Solver</p>
+        <a href="#portfolio" class="cta-button">View My Work</a>
+      </section>
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-image">
+              <img src="https://placehold.co/400" alt="Profile Photo" />
+            </div>
+            <div class="about-content">
+              <h2>About Me</h2>
+              <p class="lead">
+                I'm a passionate developer with 3+ years of experience building
+                web applications.
+              </p>
+              <p>
+                Specialized in Frontend development with React and Vue. Also
+                experienced in Backend with Node.js and Python.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills-section">
+        <div class="container">
+          <h2>My Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <span class="skill-name">HTML5</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+              <span class="skill-percent">95%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">CSS</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">React</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+              <span class="skill-percent">80%</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio-section">
+        <div class="container">
+          <h2>My Portfolio</h2>
+          <div class="portfolio-filters" aria-label="Portfolio filters">
+            <button class="filter-btn active" type="button">All</button>
+            <button class="filter-btn" type="button">Web</button>
+            <button class="filter-btn" type="button">Mobile</button>
+            <button class="filter-btn" type="button">Design</button>
+          </div>
+
+          <div class="portfolio-grid">
+            <a href="#lightbox-1" class="portfolio-item" data-category="web">
+              <img
+                src="https://placehold.co/800x600/6366f1/ffffff?text=E-Commerce+Website"
+                alt="E-Commerce Website"
+              />
+              <div class="portfolio-overlay">
+                <h3>E-Commerce Website</h3>
+                <p>React + Node.js</p>
+              </div>
+            </a>
+            <a href="#lightbox-2" class="portfolio-item" data-category="web">
+              <img
+                src="https://placehold.co/800x600/8b5cf6/ffffff?text=Corporate+Landing+Page"
+                alt="Corporate Landing Page"
+              />
+              <div class="portfolio-overlay">
+                <h3>Corporate Landing Page</h3>
+                <p>HTML + CSS + JavaScript</p>
+              </div>
+            </a>
+            <a href="#lightbox-3" class="portfolio-item" data-category="web">
+              <img
+                src="https://placehold.co/800x600/334155/ffffff?text=Dashboard+UI"
+                alt="Dashboard UI"
+              />
+              <div class="portfolio-overlay">
+                <h3>Dashboard UI</h3>
+                <p>Vue + Chart Components</p>
+              </div>
+            </a>
+            <a href="#lightbox-4" class="portfolio-item" data-category="mobile">
+              <img
+                src="https://placehold.co/800x600/0f766e/ffffff?text=Task+Manager+App"
+                alt="Task Manager App"
+              />
+              <div class="portfolio-overlay">
+                <h3>Task Manager App</h3>
+                <p>React Native</p>
+              </div>
+            </a>
+            <a href="#lightbox-5" class="portfolio-item" data-category="mobile">
+              <img
+                src="https://placehold.co/800x600/16a34a/ffffff?text=Fitness+Tracker"
+                alt="Fitness Tracker"
+              />
+              <div class="portfolio-overlay">
+                <h3>Fitness Tracker</h3>
+                <p>Flutter + Firebase</p>
+              </div>
+            </a>
+            <a href="#lightbox-6" class="portfolio-item" data-category="design">
+              <img
+                src="https://placehold.co/800x600/f59e0b/ffffff?text=Brand+Identity+Concept"
+                alt="Brand Identity Concept"
+              />
+              <div class="portfolio-overlay">
+                <h3>Brand Identity Concept</h3>
+                <p>UI / Visual Design</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div id="lightbox-1" class="lightbox">
+          <img
+            src="https://placehold.co/1200x900/6366f1/ffffff?text=E-Commerce+Website"
+            alt="E-Commerce Website preview"
+          />
+          <a
+            href="#portfolio"
+            class="lightbox-close"
+            aria-label="Close lightbox"
+            >&times;</a
+          >
+        </div>
+        <div id="lightbox-2" class="lightbox">
+          <img
+            src="https://placehold.co/1200x900/8b5cf6/ffffff?text=Corporate+Landing+Page"
+            alt="Corporate Landing Page preview"
+          />
+          <a
+            href="#portfolio"
+            class="lightbox-close"
+            aria-label="Close lightbox"
+            >&times;</a
+          >
+        </div>
+        <div id="lightbox-3" class="lightbox">
+          <img
+            src="https://placehold.co/1200x900/334155/ffffff?text=Dashboard+UI"
+            alt="Dashboard UI preview"
+          />
+          <a
+            href="#portfolio"
+            class="lightbox-close"
+            aria-label="Close lightbox"
+            >&times;</a
+          >
+        </div>
+        <div id="lightbox-4" class="lightbox">
+          <img
+            src="https://placehold.co/1200x900/0f766e/ffffff?text=Task+Manager+App"
+            alt="Task Manager App preview"
+          />
+          <a
+            href="#portfolio"
+            class="lightbox-close"
+            aria-label="Close lightbox"
+            >&times;</a
+          >
+        </div>
+        <div id="lightbox-5" class="lightbox">
+          <img
+            src="https://placehold.co/1200x900/16a34a/ffffff?text=Fitness+Tracker"
+            alt="Fitness Tracker preview"
+          />
+          <a
+            href="#portfolio"
+            class="lightbox-close"
+            aria-label="Close lightbox"
+            >&times;</a
+          >
+        </div>
+        <div id="lightbox-6" class="lightbox">
+          <img
+            src="https://placehold.co/1200x900/f59e0b/ffffff?text=Brand+Identity+Concept"
+            alt="Brand Identity Concept preview"
+          />
+          <a
+            href="#portfolio"
+            class="lightbox-close"
+            aria-label="Close lightbox"
+            >&times;</a
+          >
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <h2>Get In Touch</h2>
+          <div class="contact-wrapper">
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <p>
+                Feel free to reach out. I'm always open to discussing new
+                projects.
+              </p>
+              <div class="info-item">
+                <span class="icon">📧</span>
+                <span>danghuyphong@example.com</span>
+              </div>
+              <div class="info-item">
+                <span class="icon">📍</span>
+                <span>Hanoi, Vietnam</span>
+              </div>
+            </div>
+
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div>
+            <div class="footer-logo">DangHuyPhong</div>
+            <p class="footer-tagline">Building digital experiences</p>
+          </div>
+          <div class="footer-center">
+            <p>
+              Frontend development with clean UI, responsive layouts, and modern
+              interactions.
+            </p>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://github.com/"
+              class="social-link"
+              aria-label="GitHub"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.72-4.03-1.42-4.03-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.21.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.66-.31-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.26 1.99-.4 3.01-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.6-2.81 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.7.8.58A12.01 12.01 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/"
+              class="social-link"
+              aria-label="LinkedIn"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.2 8.5h4.6V24H.2V8.5zM8.1 8.5h4.4v2.1h.1c.6-1.1 2.1-2.4 4.3-2.4 4.6 0 5.4 3 5.4 7V24h-4.6v-7.5c0-1.8 0-4.1-2.5-4.1s-2.9 2-2.9 4V24H8.1V8.5z"
+                />
+              </svg>
+            </a>
+            <a
+              href="mailto:danghuyphong@example.com"
+              class="social-link"
+              aria-label="Email"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M1.5 4h21C23.3 4 24 4.7 24 5.5v13c0 .8-.7 1.5-1.5 1.5h-21C.7 20 0 19.3 0 18.5v-13C0 4.7.7 4 1.5 4zm0 2v.2l10.5 7 10.5-7V6h-21zm21 11.5v-8.3l-10.1 6.8c-.3.2-.8.2-1.1 0L1.5 9.2v8.3h21z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 DangHuyPhong. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
