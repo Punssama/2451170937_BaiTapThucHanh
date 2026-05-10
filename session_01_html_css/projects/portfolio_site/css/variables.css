@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --color-primary: #6366f1;
+  --color-secondary: #8b5cf6;
+  --color-dark: #1e293b;
+  --color-light: #f8fafc;
+  --color-text: #334155;
+  --font-main: "Segoe UI", sans-serif;
+}
